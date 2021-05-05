@@ -1,0 +1,19 @@
+{
+  "name": "virmos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xeron07/virmos.git"
+  },
+  "author": "Md. Minhaz Uddin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Xeron07/virmos/issues"
+  },
+  "homepage": "https://github.com/Xeron07/virmos#readme"
+}
