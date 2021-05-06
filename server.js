@@ -4,6 +4,20 @@ const fastify = require('fastify')({ logger: true })
 const http = require('http').Server(fastify);
 const io = require('socket.io')(http);
 
+const mongoose=require('mongoose');
+
+
+//CONFIGURATIONS
+mongoose.connect(
+  "mongodb://localhost:27017/vimos",
+  //"mongodb+srv://docchoper:2020docchoper@cluster0.tgu99.mongodb.net/docchoper",
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  }
+);
+
+
 fastify.register(require('point-of-view'), {
     engine: {
       ejs: require('ejs')
