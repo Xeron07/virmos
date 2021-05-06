@@ -19,7 +19,7 @@
   <body>
     <ul id="messages"></ul>
     <form action="/" method="POST" id="chatForm">
-      <input id="txt" autocomplete="off" autofocus="on" oninput="isTyping()" placeholder="type your message here..." /><button>Send</button>
+      <input id="txt" autocomplete="off" autofocus="on" oninput="isTyping()" placeholder="type your message here..." /><button>Send</button><button onclick="joinRoom()">join group</button>
     </form>
     <script>
             var socket = io.connect('http://localhost:7000');
@@ -41,6 +41,12 @@
             // ask username
             var username = prompt('Please tell me your name');
             socket.emit('username', username);
+
+
+            function joinRoom(){
+              var roomname=prompt('Enter room name');
+              socket.emit("join-chat-room",100);
+            }
     </script>
   </body>
 </html>

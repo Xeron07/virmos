@@ -4,7 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node server"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   "dependencies": {
     "ejs": "^3.1.6",
     "fastify": "^3.15.1",
+    "fastify-socket.io": "^2.0.0",
     "mongoose": "^5.12.7",
     "point-of-view": "^4.14.0",
     "socket.io": "^4.0.1"
